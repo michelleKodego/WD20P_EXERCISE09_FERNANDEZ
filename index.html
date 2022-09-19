@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Anime-Hub</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <style>
+        .w-100 {
+            width: 100% !important;
+            height: 75vh;
+        }
+        .side-pic{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class=" bg-light">
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid text-center ">
+            <a class="navbar-brand d-flex " href="index.html"> <img src="img/anime-logo.jpg" class="me-2"
+                    style="width:30px;">
+                <h5 class="text-light"> ANIME HUB</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Comedy</a></li>
+                            <li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <a href="Log in.html"><button class="btn btn-outline-light ms-2" type="button">Log In</button></a>
+            </div>
+        </div>
+    </nav> <br>
+    <!--End of Nav-->
+    <!--Carousel-->
+    <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active " data-bs-interval="2500">
+                    <img src="img/attack-on-titan.jpg" class="d-block w-100">
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/dargon-ball.avif" class="d-block w-100 ">
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/naruto.webp" class="d-block w-100">
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/One-Piece.jpg" class="d-block w-100">
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/one-punch.jpg" class="d-block w-100">
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+            </div>
+            <!--carousel controls-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <!--End of carousel -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button btn btn-danger text-danger" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Episode 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via
+                                    CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed btn btn-danger text-danger " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <i class="fa-solid fa-arrow-right me-2"></i>Episode 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding
+                                    via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                    default variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed btn btn-danger text-danger" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <i class="fa-solid fa-arrow-right me-2"></i>Episode 3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via
+                                    CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col pt-5 ">
+                        <p class="p-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus ipsa eaque
+                            dicta, facere perspiciatis? Numquam, labore libero! Illo porro delectus repellendus magni
+                            aspernatur laborum eos dolor repudiandae a animi? Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Ullam quod laborum, perferendis iusto nulla voluptatibus nesciunt, odit
+                            tempore officia eum sunt ea ratione facilis atque corrupti autem. Veritatis, officiis
+                            fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam
+                            laudantium sit fugiat necessitatibus voluptatibus veritatis, ratione possimus? Alias dicta
+                            neque modi suscipit vitae reiciendis ab voluptatem, nemo nihil est. lorem
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <center>
+                    <div class="row">
+                        <div class="col">
+                            <div class="container d-lg-flex d-block justify-content-center border bg-light">
+
+                                <div class="card m-2" style="width:18rem;">
+                                    <img src="img/attack-on-titan.jpg" class="h-50">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-danger">Read more</a>
+                                    </div>
+                                </div>
+
+                                <div class="card  m-2" style="width:18rem;">
+                                    <img src="img/dargon-ball.avif" class="h-50">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-danger">Read more</a>
+                                    </div>
+                                </div>
+
+                                <div class="card m-2" style="width:18rem;">
+                                    <img src="img/naruto.webp" class="h-50">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-danger">Read more</a>
+                                    </div>
+                                </div>
+
+                                <div class="card m-2" style="width:18rem;">
+                                    <img src="img/One-Piece.jpg" class="h-50">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-danger">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                           <div class="row">
+                            <div class="col">
+                                <div class="container d-lg-flex d-block border bg-light"> <!--2nd row cards-->
+    
+                                    <div class="card  m-2" style="width:18rem;">
+                                        <img src="img/attack-on-titan.jpg" class="h-50">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-danger">Read more</a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card  m-2 " style="width:18rem;">
+                                        <img src="img/dargon-ball.avif" class="h-50">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-danger">Read more</a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card m-2" style="width:18rem;">
+                                        <img src="img/naruto.webp" class="h-50">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-danger">Read more</a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card  m-2" style="width:18rem;">
+                                        <img src="img/One-Piece.jpg" class="h-50">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-danger">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+
+                            <div class="row"><!--row 1-->
+                                <div class="col">
+                                    <!-- pagination -->
+                                    <br><br>
+                                    <div class="">
+                                        <nav aria-label="Page navigation example  ">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid p-3 border">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <img src="img/attack-on-titan.jpg" class="side-pic">
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-4 text-danger text-start">Attack on Titan</h1>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum soluta ea. Eum quod animi impedit velit numquam vel reprehenderit minus amet, quam, accusamus dolorum dicta perspiciatis cumque ad esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae et excepturi numquam tempora, repellat modi odio quaerat veniam quos est illum doloremque aliquid saepe eum sapiente velit veritatis, voluptatibus repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil culpa quam, dolorem tenetur dolor eos consequuntur vero aperiam obcaecati, hic quaerat rerum. Reprehenderit eius voluptas soluta debitis, magnam aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis sed deserunt repellendus, distinctio, non voluptatum fuga ullam illum tenetur optio quidem. Officiis nostrum excepturi qui ex tempora exercitationem rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita pariatur reprehenderit tempore nihil ducimus, perspiciatis eius quasi libero dolorem, quaerat excepturi in error? Quod, vel ea. Quaerat id consequuntur asperiores?
+
+                </p>
+            </div>
+        </div>
+        <div class="row d-flex flex-row-reverse align-items-center">
+            <div class="col-sm-6 ">
+                
+                <img src="img/One-Piece.jpg" class="side-pic">
+            </div>
+            <div class="col-md-6">
+              
+                <h1 class="display-4 text-danger text-end">One Piece</h1>
+                <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum soluta ea. Eum quod animi impedit velit numquam vel reprehenderit minus amet, quam, accusamus dolorum dicta perspiciatis cumque ad esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae et excepturi numquam tempora, repellat modi odio quaerat veniam quos est illum doloremque aliquid saepe eum sapiente velit veritatis, voluptatibus repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil culpa quam, dolorem tenetur dolor eos consequuntur vero aperiam obcaecati, hic quaerat rerum. Reprehenderit eius voluptas soluta debitis, magnam aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis sed deserunt repellendus, distinctio, non voluptatum fuga ullam illum tenetur optio quidem. Officiis nostrum excepturi qui ex tempora exercitationem rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita pariatur reprehenderit tempore nihil ducimus, perspiciatis eius quasi libero dolorem, quaerat excepturi in error? Quod, vel ea. Quaerat id consequuntur asperiores?
+
+                </p>
+            </div>
+            
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <img src="img/attack-on-titan.jpg" class="side-pic">
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-4 text-danger text-start">Attack on Titan</h1>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum soluta ea. Eum quod animi impedit velit numquam vel reprehenderit minus amet, quam, accusamus dolorum dicta perspiciatis cumque ad esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae et excepturi numquam tempora, repellat modi odio quaerat veniam quos est illum doloremque aliquid saepe eum sapiente velit veritatis, voluptatibus repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil culpa quam, dolorem tenetur dolor eos consequuntur vero aperiam obcaecati, hic quaerat rerum. Reprehenderit eius voluptas soluta debitis, magnam aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis sed deserunt repellendus, distinctio, non voluptatum fuga ullam illum tenetur optio quidem. Officiis nostrum excepturi qui ex tempora exercitationem rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita pariatur reprehenderit tempore nihil ducimus, perspiciatis eius quasi libero dolorem, quaerat excepturi in error? Quod, vel ea. Quaerat id consequuntur asperiores?
+
+                </p>
+            </div>
+           
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer class="  text-center text-light bg-danger">
+        <div>
+            <i class="bi bi-facebook fst-normal "> KODEGO | WD20P-SOFTWARE CHASERS</i>
+        </div>
+        <div class="fst-normal fw-light">
+            <i class="bi bi-c-circle chase">All Rights Reserved</i>
+        </div>
+    </footer>
+</body>
+
+</html>

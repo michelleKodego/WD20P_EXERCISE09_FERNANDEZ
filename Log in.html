@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <style>
+        .w-100 {
+            width: 100% !important;
+            height: 75vh;
+        }
+
+        .top-pic {
+            width: 100% !important;
+            height: 25vh;
+        }
+
+        .sub {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid text-center ">
+            <a class="navbar-brand d-flex " href="index.html"> <img src="img/anime-logo.jpg" class="me-2"
+                    style="width:30px;">
+                <h5 class="text-light"> ANIME HUB</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Comedy</a></li>
+                            <li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> <br>
+    <!--end of nav-->
+
+    <p class="display-5 container text-center"> Register</p>
+
+    <div class="container-md d-sm-flex text-wrap text-center border  border-dark w-50 rounded rounded-3 p-3">
+        <form class="input-group text-wrap ">
+            <div class="input-group">
+                <label for="fname" class="input-group-text text-wrap   w-inherit">First Name:</label>
+                <input type="text" id="fname" class="form-control" placeholder="Michelle">
+            </div>
+            <div class="input-group">
+                <label for="mname" class="input-group-text  text-wrap   w-inherit">Middle Name:</label>
+                <input type="text" id="mname" class="form-control" placeholder="Garcia">
+            </div>
+            <div class="input-group">
+                <label for="lname" class="input-group-text  text-wrap   w-inherit">Last Name:</label>
+                <input type="text" id="lname" class="form-control" placeholder="Fernandez">
+            </div>
+            <div class="input-group">
+                <label for="bday" class="input-group-text  text-wrap   w-inherit">Birthdate:</label>
+                <input type="date" id="bday" class="form-control" placeholder="Fernandez">
+            </div>
+            <div class="input-group">
+                <label for="address" class="input-group-text text-wrap   w-inherit">Address:</label>
+                <input type="text" id="address" class="form-control"
+                    placeholder="Blk No. Street, Baranggay, Municipality">
+            </div>
+            <div class="input-group">
+                <label for="cnum" class="input-group-text  text-wrap   w-inherit">Contact No.:</label>
+                <input type="text" id="cnum" class="form-control" placeholder="09xxxxxxxxx" maxlength="11"
+                    minlength="11">
+            </div>
+            <div class="input-group">
+                <label for="lname" class="input-group-text text-wrap   w-inherit">Gender:</label>
+                <select class="form-control">
+                    <option> Male</option>
+                    <option> Female</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="lname" class="input-group-text text-wrap  w-inherit">Do you agree to our terms and
+                    conditions?</label>
+                <div class="form-check m-auto">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        I agree
+                    </label>
+                </div>
+                <div class="form-check m-auto">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        I don't agree
+                    </label>
+                </div>
+            </div>
+            <div class="sub mt-3">
+
+                <!--1st modal-->
+                <button class="btn btn-outline-danger sub" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalOne">
+                    Register
+                </button>
+
+                <div class="modal" id="modalOne" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!--modal header-->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle">
+                                    Verification: </h5>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close">
+
+                                </button>
+                            </div>
+                            <!--end of header-->
+                            <!--start of modal body-->
+                            <div class="modal-body">
+                                <p>You aure you want to register to Anime-Hub?</p>
+
+                            </div>
+                            <!--end of modal body-->
+                            <!--modal footer-->
+
+                            <div class="modal-footer ">
+                                <button class="btn btn-danger" type="button">
+                                    Hell yeah!
+                                </button>
+                                <button type="button" class="btn btn-secondary">
+                                    No!
+                                </button>
+                            </div>
+                            <!--end of modal footer-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img src="img/attack-on-titan.jpg" class="top-pic">
+            </div>
+            <div class="col">
+                <img src="img/dargon-ball.avif" class="top-pic">
+            </div>
+            <div class="col">
+                <img src="img/One-Piece.jpg" class="top-pic">
+            </div>
+            <div class="col">
+                <img src="img/naruto.webp" class="top-pic">
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>
